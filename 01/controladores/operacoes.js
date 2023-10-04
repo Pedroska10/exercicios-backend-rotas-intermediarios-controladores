@@ -1,34 +1,37 @@
-const soma = (req, res) => {
+const somar = (req, res) => {
   const { num1, num2 } = req.query;
-  const resultado = Number(num1) + Number(num2);
 
   if (num1 && num2) {
+    return res.send(`${Number(num1) + Number(num2)}`);
   }
-  return res.send(String(resultado));
+  return res.send("Números inválidos");
 };
+
 const subtrair = (req, res) => {
   const { num1, num2 } = req.query;
-  const resultado = Number(num1) - Number(num2);
 
   if (num1 && num2) {
+    return res.send(`${num1 - num2}`);
   }
-  return res.send(String(resultado));
+  return res.send("Números inválidos");
 };
+
 const multiplicar = (req, res) => {
   const { num1, num2 } = req.query;
-  const resultado = Number(num1) * Number(num2);
 
   if (num1 && num2) {
+    return res.send(`${num1 * num2}`);
   }
-  return res.send(String(resultado));
+  return res.send("Números inválidos");
 };
+
 const dividir = (req, res) => {
   const { num1, num2 } = req.query;
-  const resultado = Number(num1) / Number(num2);
 
   if (num1 && num2) {
+    return res.send(`${num1 / num2}`);
   }
-  return res.send(String(resultado));
+  return res.send("Números inválidos");
 };
 
-module.exports = { soma, subtrair, multiplicar, dividir };
+module.exports = { somar, subtrair, multiplicar, dividir };
