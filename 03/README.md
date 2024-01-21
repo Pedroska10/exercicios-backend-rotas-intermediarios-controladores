@@ -1,5 +1,3 @@
-![](https://i.imgur.com/xG74tOh.png)
-
 # Exercício 03
 
 ## Consulta de imóveis
@@ -8,28 +6,29 @@ Neste exercício deverá ser criado um servidor para consulta de imóveis pré c
 
 ```javascript
 const imoveis = [
-    {
-        id: 1,
-        logradouro: "Av. Getúlio Vargas",
-        numero: 1458,
-        complemento: "Térreo",
-        bairro: "Funcionários",
-        cidade: "Belo Horizonte",
-        cep: "30112-021",
-    },
-    {
-        id: 2,
-        logradouro: "Av. Paulista",
-        numero: 1009,
-        complemento: "16º andar",
-        bairro: "Cerqueira César",
-        cidade: "São Paulo",
-        cep: "01310-100",
-    },
-]
+  {
+    id: 1,
+    logradouro: "Av. Getúlio Vargas",
+    numero: 1458,
+    complemento: "Térreo",
+    bairro: "Funcionários",
+    cidade: "Belo Horizonte",
+    cep: "30112-021",
+  },
+  {
+    id: 2,
+    logradouro: "Av. Paulista",
+    numero: 1009,
+    complemento: "16º andar",
+    bairro: "Cerqueira César",
+    cidade: "São Paulo",
+    cep: "01310-100",
+  },
+];
 ```
 
 Este servidor deverá possuir apenas um recurso **imoveis** e apenas duas rotas que utilizem o verbo **HTTP GET**. Segue abaixo as rotas:
+
 ```
 /imoveis
 /imoveis/{id}
@@ -39,24 +38,24 @@ Para a requisição **HTTP GET** na rota `http://localhost:8000/imoveis` deverá
 
 ```json
 [
-    {
-        "id": 1,
-        "logradouro": "Av. Getúlio Vargas",
-        "numero": 1458,
-        "complemento": "Térreo",
-        "bairro": "Funcionários",
-        "cidade": "Belo Horizonte",
-        "cep": "30112-021"
-    },
-    {
-        "id": 2,
-        "logradouro": "Av. Paulista",
-        "numero": 1009,
-        "complemento": "16º andar",
-        "bairro": "Cerqueira César",
-        "cidade": "São Paulo",
-        "cep": "01310-100"
-    }
+  {
+    "id": 1,
+    "logradouro": "Av. Getúlio Vargas",
+    "numero": 1458,
+    "complemento": "Térreo",
+    "bairro": "Funcionários",
+    "cidade": "Belo Horizonte",
+    "cep": "30112-021"
+  },
+  {
+    "id": 2,
+    "logradouro": "Av. Paulista",
+    "numero": 1009,
+    "complemento": "16º andar",
+    "bairro": "Cerqueira César",
+    "cidade": "São Paulo",
+    "cep": "01310-100"
+  }
 ]
 ```
 
@@ -66,13 +65,13 @@ Portanto para a requisição **HTTP GET** na rota `http://localhost:8000/imoveis
 
 ```json
 {
-    "id": 2,
-    "logradouro": "Av. Paulista",
-    "numero": 1009,
-    "complemento": "16º andar",
-    "bairro": "Cerqueira César",
-    "cidade": "São Paulo",
-    "cep": "01310-100"
+  "id": 2,
+  "logradouro": "Av. Paulista",
+  "numero": 1009,
+  "complemento": "16º andar",
+  "bairro": "Cerqueira César",
+  "cidade": "São Paulo",
+  "cep": "01310-100"
 }
 ```
 
@@ -136,9 +135,9 @@ Para finalizar o exercício, após fazer todas as divisões de camadas solicitad
 
 Preencha a checklist para finalizar o exercício:
 
--   [ ] Resolver o exercício revendo a aula se necessário
--   [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
--   [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
--   [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
+- [ ] Resolver o exercício revendo a aula se necessário
+- [ ] Adicionar as mudanças aos commits (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
+- [ ] Commitar a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
+- [ ] Pushar os commits na sua branch na origem (`git push origin nome-da-branch`)
 
 ###### tags: `backend` `lógica` `exercício` `nodeJS` `JavaScript`
